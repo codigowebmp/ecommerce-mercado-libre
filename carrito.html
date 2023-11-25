@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Mercado Libre</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-header">
+            <header class="header">
+                <div class="container-logo">
+                    <img src="img/logo.png" alt="" class="logo">
+                </div>
+                <div class="container-search">
+                    <div class="input">
+                        <input type="text" placeholder="Buscar productos, marcasa y modelos">
+                        <i class="bi bi-search icono-busqueda"></i>
+                    </div>
+                </div>
+                <div class="container-publicidad">
+                    <img src="img/publicidad.webp" alt="">
+                </div>
+                <div class="container-ubicacion">
+                    <a href="#">
+                        <i class="bi bi-geo-alt"></i>
+                        <span class="txt-enviar">Enviar a</span>
+                        <span class="txt-lugar">Capital Federal</span>
+                    </a>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="boton-categoria"><i class="bi bi-arrow-left"></i>Seguir comprando</a>
+                </div>
+                <div class="info-user">
+                    <a href="#">Creá tu cuenta</a>
+                    <a href="#">Ingresá</a>
+                    <a href="#">Mis Compras</a>
+                    <a href="carrito.html">
+                        <i class="bi bi-cart icono-carrito"></i>
+                        <span class="num-en-carrito" id="num-en-carrito">0</span>
+                    </a>
+                </div>
+            </header>
+        </div>
+
+        <!-- main - contenedor carrito -->
+        <main>
+            <div class="contenedor-carrito">
+                <p class="carrito-vacio" id="carrito-vacio">
+                    <i class="bi bi-cart-fill"></i>
+                    Carrito Vacío!! - Empieza un carrito de compras
+                </p>
+               <div class="carrito-productos disabled" id="carrito-productos">
+                    <div class="carrito-producto">
+                        <div class="carrito-producto-proveedor">
+                            <span>StoreCelular</span>
+                        </div>
+                        <div class="carrito-item">
+                            <div class="container-producto-img">
+                                <img src="img/celulares/11.png" alt="" class="carrito-producto-img">
+                            </div>
+                            
+                            <div class="carrito-producto-info">
+                                <span class="carrito-producto-titulo">Moto G13 Dual Sim 128 Gb Azul Difuso 4 Gb Ram</span>
+                                <div class="carrito-producto-opciones">
+                                    <button class="carrito-producto-eliminar">Eliminar</button>
+                                </div>
+                            </div>
+                            <div class="container-selector-cantidad">
+                                <div class="selector">
+                                    <button class="restar-cantidad"> <i class="bi bi-dash-lg"></i> </button>
+                                    <span class="cantidad">1</span>
+                                    <button class="sumar-cantidad"> <i class="bi bi-plus-lg"></i> </button>
+                                </div>
+                            </div>
+                            <div class="carrito-producto-precio">
+                                <p>$40.000</p>
+                            </div>
+                        </div>
+                        <div class="carrito-producto-precio-envio">
+                            <span>Envio</span>
+                            <span class="precio-envio">Gratis</span>
+                        </div>
+                        <div class="carrito-producto-mas-info">
+                            <span>Aprovechá tu envío gratis agregando más. <a href="#">Ver más producto del vendedor</a></span>
+                        </div>
+                    </div>
+                    <div class="carrito-producto">
+                        <div class="carrito-producto-proveedor">
+                            <span>StoreCelular</span>
+                        </div>
+                        <div class="carrito-item">
+                            <div class="container-producto-img">
+                                <img src="img/celulares/12.png" alt="" class="carrito-producto-img">
+                            </div>
+                            
+                            <div class="carrito-producto-info">
+                                <span class="carrito-producto-titulo">Moto G13 Dual Sim 128 Gb Azul Difuso 4 Gb Ram</span>
+                                <div class="carrito-producto-opciones">
+                                    <button class="carrito-producto-eliminar">Eliminar</button>
+                                </div>
+                            </div>
+                            <div class="container-selector-cantidad">
+                                <div class="selector">
+                                    <button> <i class="bi bi-dash-lg"></i> </button>
+                                    <span class="cantidad">1</span>
+                                    <button> <i class="bi bi-plus-lg"></i> </button>
+                                </div>
+                            </div>
+                            <div class="carrito-producto-precio">
+                                <p>$40.000</p>
+                            </div>
+                        </div>
+                        <div class="carrito-producto-precio-envio">
+                            <span>Envio</span>
+                            <span class="precio-envio">Gratis</span>
+                        </div>
+                        <div class="carrito-producto-mas-info">
+                            <span>Aprovechá tu envío gratis agregando más. <a href="#">Ver más producto del vendedor</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carrito-resumen-compra disabled" id="carrito-resumen">
+                   <div class="carrito-resumen-compra-titulo">
+                        <span>Resumen de Compra</span>
+                   </div>
+                   <div class="carrito-resumen-total-compra item-resumen">
+                        <span class="cantidad-productos-compra">Productos(<span class="num-total">5</span>)</span>
+                        <span class="precio-productos-compra">$89.000</span>
+                    </div>
+
+                    <div class="carrito-resumen-total-envio item-resumen">
+                        <span>Envios</span>
+                        <span class="carrito-resumen-precio-envio">$ 0</span>
+                    </div>
+
+                    <div class="carrito-resumen-total-final item-resumen">
+                        <span>Total</span>
+                        <span class="precio-final" id="precio-final">$400.000</span>
+                    </div>
+                    <div class="item-resumen">
+                        <button class="carrito-acciones-comprar">Continuar Compra</button>
+                    </div>
+                </div>
+
+                <p id="carrito-compra-finzalizada" class="disabled">Muchas gracias por tu compra!</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/carrito.js"></script>
+</body>
+</html>
